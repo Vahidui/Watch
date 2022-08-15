@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_home"
+    >
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.watch.ui.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragment_hart"
+        android:name="com.example.watch.ui.fragment.HartFragment"
+        android:label="Hart"
+        tools:layout="@layout/fragment_hart" />
+    <fragment
+        android:id="@+id/fragment_bag"
+        android:name="com.example.watch.ui.fragment.BagFragment"
+        android:label="Bag"
+        tools:layout="@layout/fragment_bag" />
+    <fragment
+        android:id="@+id/fragment_user"
+        android:name="com.example.watch.ui.fragment.UserFragment"
+        android:label="User"
+        tools:layout="@layout/fragment_user" />
+
+</navigation>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintTop_toBottomOf="@id/gl_T" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintStart_toStartOf="@id/gl_R"
+        app:layout_constraintTop_toBottomOf="@id/gl_T" />
+
+    <ImageButton
+        android:id="@+id/ib_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_search"
+        app:layout_constraintStart_toStartOf="@id/gl_R"
+        app:layout_constraintTop_toBottomOf="@id/gl_T" />
+
+    <ImageView
+        android:id="@+id/image21"
+        android:layout_width="213dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/watch5"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintStart_toEndOf="@id/gl_R"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+    <TextView
+        android:id="@+id/text_Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="5180/1R"
+        android:textColor="#BC9476"
+        android:textDirection="ltr"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintTop_toBottomOf="@id/image21" />
+
+    <TextView
+        android:id="@+id/text_titel"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SKELETON MOVEMENT WITH HAND-ENGRAVED DECORATION"
+        android:textColor="#C0AF9F"
+        android:textDirection="ltr"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintStart_toStartOf="@id/gl_R"
+        app:layout_constraintTop_toBottomOf="@id/text_Data" />
+
+    <TextView
+        android:id="@+id/text_about"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Skeleton movement with hand-engraved decoration. Diameter: 27.5 mm. Height: 2.53 mm. Parts: 159. Bridges: 6. Jewels: 27. Power reserve: Min. 48 hours. 22K gold off-center mini-rotor. Balance: Gyromax®. Vibrations/hour: 21 600 (3 Hz). Patent: CH 595 653."
+        android:textColor="#C0AF9F"
+        android:textDirection="ltr"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintStart_toStartOf="@id/gl_R"
+        app:layout_constraintTop_toBottomOf="@id/text_titel" />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:text="96'920 €"
+        android:textColor="#463527"
+        android:textDirection="ltr"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintTop_toBottomOf="@id/text_about" />
+
+    <ImageButton
+        android:id="@+id/ib_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="@id/text_price"
+        app:layout_constraintStart_toStartOf="@id/gl_R"
+        app:layout_constraintTop_toTopOf="@id/text_price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

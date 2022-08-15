@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <ImageButton
+        android:id="@+id/ib_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_menu"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintTop_toBottomOf="@id/gl_T" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintStart_toStartOf="@id/gl_R"
+        app:layout_constraintTop_toBottomOf="@id/gl_T" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/et_serch"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="20dp"
+        android:hint="Search"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="#C0AF9F"
+        android:textColorHint="#C0AF9F"
+        android:textDirection="ltr"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+    <ImageButton
+        android:id="@+id/iib_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/ic_setting"
+        app:layout_constraintBottom_toBottomOf="@id/et_search"
+        app:layout_constraintStart_toStartOf="@id/gl_R"
+        app:layout_constraintTop_toTopOf="@id/et_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layoutAnimation="@anim/layout_animation"
+        android:layoutDirection="ltr"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintStart_toStartOf="@id/gl_R"
+        app:layout_constraintTop_toBottomOf="@id/et_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_watch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layoutAnimation="@anim/layout_animation"
+        android:layoutDirection="ltr"
+        app:layout_constraintEnd_toEndOf="@id/gl_L"
+        app:layout_constraintStart_toStartOf="@id/gl_R"
+        app:layout_constraintTop_toBottomOf="@id/rv_cat" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
