@@ -24,6 +24,7 @@ import java.io.IOError
 class HomeFragment : Fragment(R.layout.fragment_home), InterfaceWatch {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val text = ""
         lifecycleScope.launchWhenCreated {
             progress.visibility = View.VISIBLE
             val response = try {
